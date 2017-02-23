@@ -19,3 +19,4 @@ The following is a break down of the various components of the scrypt.
 # Creates Variable $RemoveRecycleBin witht eh path for the logged on user's recycle bin with thier SID.
 # Pulls drive information and packages up a variable for the current user's $Recycle.Bin
 # Pulls anything over 30 days since last write time and deletes it.
+# The number of days in the (Get-Date).AddDays(-30) is the number of whole days that the scrypt will reach back as the "no older than" point.
