@@ -14,4 +14,8 @@ Some things about Windows and the recycle bin in an Enterprise Domain.
 
 The following is a break down of the various components of the scrypt.
 
-
+# First 3 lines up to the Pipe, pull the SID of the currently logge on user.
+# After Pipe, passes that output to the variable $_.
+# Creates Variable $RemoveRecycleBin witht eh path for the logged on user's recycle bin with thier SID.
+# Pulls drive information and packages up a variable for the current user's $Recycle.Bin
+# Pulls anything over 30 days since last write time and deletes it.
