@@ -5,14 +5,7 @@
 
 $objUser = New-Object System.Security.Principal.NTAccount("$env:UserName")
 $strSID = $objUser.Translate([System.Security.Principal.SecurityIdentifier])
-$strSID.Value | ForEach-Object ($_)
-{
-    $RemoveRecycleBin = '\$Recycle.Bin\' + $_
-}
-ForEach ($Drive in Get-PSDrive -PSProvider FileSystem)
-{
-    $Path = $Drive.Name + $RemoveRecycleBin
-    Get-ChildItem $Path -Force -Recurse -ErrorAction SilentlyContinue |
-    Where-Object { $_.LastWriteTime -lt (Get-Date).AddDays(-30)} |
-    Remove-Item -Recurse -Force
-}
+$Path = ('c\$Recycle.Bin\' + $strSID)
+Get-ChildItem $Path -Force -Recurse -ErrorAction SilentlyContinue |
+Where-Object {$_.LastWriteTime -lt (Get-Date).AddDays(-30)} |
+Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
