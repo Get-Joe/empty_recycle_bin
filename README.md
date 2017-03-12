@@ -3,7 +3,7 @@ The conditions this was designed for are as follows. This may not work as intend
 
 1. You work in an Enterprise Domain.
 2. You have rights to execute Powershell scipts across the domain.
-3. Preferably you have access to to manage Group Policy, including the ability to sign scrypts and set log on scrypts.
+3. Preferably you have access to to manage Group Policy, including the ability to sign scripts and set log on scripts.
 
 ##Some things about Windows and the recycle bin in an Enterprise Domain.
 
@@ -12,7 +12,7 @@ The conditions this was designed for are as follows. This may not work as intend
 3. Each user only has permissions to their own Recycle Bin and should ony affect their own.
 4. By default the Recycle Bin has a maximum percentage of the hard drive, which is regulated by Group Policy.
 
-##The following is a break down of the various components of the scrypt.
+##The following is a break down of the various components of the script.
 
 1. First 3 lines up to the Pipe, pull the SID of the currently logge on user and creates a variable with the full recycle bin path.
 2. Next line pulls the user's recycle bin.
