@@ -7,8 +7,8 @@ The conditions this was designed for are as follows. This may not work as intend
 
 ##Some things about Windows and the recycle bin in an Enterprise Domain.
 
-1. Each user's Recycle Bin is located in a hidden folder at | Fill in File Path |.  
-2. Their naming convention follows a pattern | Fill in Naming Convention |.
+1. Each user's Recycle Bin is located in a hidden folder at c:\$Recycle.Bin.  
+2. Their naming convention follows a pattern c:\$Recycle.Bin\%SID%.
 3. Each user only has permissions to their own Recycle Bin and should ony affect their own.
 4. By default the Recycle Bin has a maximum percentage of the hard drive, which is regulated by Group Policy.
 
