@@ -1,4 +1,4 @@
-#This is a powershell script to remove older items from the recycle bin. 
+# This is a powershell script to remove older items from the recycle bin. 
 The conditions this was designed for are as follows. This may not work as intended if you do not fulfil the following.
 
 1. You work in an Enterprise Domain.
