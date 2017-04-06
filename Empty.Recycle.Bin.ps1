@@ -1,5 +1,5 @@
 # A script by Joe.
-# The following is a script to remove items from the recycle bin based on the last time they were accessed.
+# The following is a script to remove items from the recycle bin put there more than 30 days ago.
 # It is created for an enterprise environment.
 # Further information can be found in the README file.
 
