@@ -3,7 +3,6 @@
 # It is created for an enterprise environment.
 # Further information can be found in the README file.
 
-
 $objUser = New-Object System.Security.Principal.NTAccount("$env:UserName")
 $strSID = $objUser.Translate([System.Security.Principal.SecurityIdentifier])
 $Path = ('c\$Recycle.Bin\' + $strSID)
