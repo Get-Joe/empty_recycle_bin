@@ -19,3 +19,7 @@
 3. Next line pulls the user's recycle bin.
 4. From the recycle bin, pulls the items with a last write time of (in this case) more than 30 days.
 5. Removes all of the items from the user's recycle bin that fit that criteria.
+
+Please test anything several times before deployment.
+
+Currently in Alpha testing by author.
